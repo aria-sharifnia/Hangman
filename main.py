@@ -87,7 +87,7 @@ def reset_game():
         char[3] = True
 
     # picking a random word    
-    word_chose = random.randint(0, 49)
+    word_chose = random.randint(0, 29)
     with open(str(list_name)+".json") as file:
         data = json.load(file)
     word = data[word_chose].upper()
